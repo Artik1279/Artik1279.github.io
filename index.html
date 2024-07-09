@@ -1,32 +1,33 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>Оплата услуг</title> 
-    <style> 
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-        } 
-        .t-bank-button {
-            background-color: #ffff00; / Желтый цвет /
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 10px; / Закругленные углы /
-            cursor: pointer;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Оплата услуг</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: cente; / Центрирование текста /
         }
-    </style> 
-</head> 
-<body> 
-    <h1>Оплата услуг</h1> 
+        button {
+            color: #000000;
+            background-color: #ffed24;
+            font-size: 19px;
+            border: 0px solid #2d63c8;
+            border-radius: 13px;
+            padding: 12px 131px;
+            cursor: pointer;
+            display: block; / Выравнивание по центру /
+            margin: 20px auto; / Отступ сверху и автоматическое выравнивание по центру /
+      		text-decoration: none;
+        }
+        button:hover {
+            color: #ffffff;
+            background-color: #e0ce06;
+        }
+    </style>
+</head>
+<body>
+    <h1>Оплата услуг</h1>
     <iframe src="https://yoomoney.ru/quickpay/fundraise/button?billNumber=13SFE749KIU.240709&" width="330" height="50" frameborder="0" allowtransparency="true" scrolling="no"></iframe> 
-    
-
-
-    <button class="t-bank-button" onclick="window.location.href='https://t-bank.ru'">T-банк</button> 
-</body> 
+    <button onclick="window.open('https://t-bank.ru', '_blank')" type="button" name="myButton" autofocus>T-Bank</button>   
+</body>
 </html>
